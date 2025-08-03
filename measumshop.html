@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Measum Shop - Best E-Commerce Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-white text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center text-2xl font-bold text-indigo-600">
+          <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" class="h-8 w-8 mr-2" alt="Logo">
+          Shopora
+        </div>
+        <nav class="hidden sm:flex space-x-8 text-sm font-medium">
+          <a href="#" class="text-gray-700 hover:text-indigo-500">Home</a>
+          <a href="#products" class="text-gray-700 hover:text-indigo-500">Products</a>
+          <a href="#contact" class="text-gray-700 hover:text-indigo-500">Contact</a>
+        </nav>
+        <button onclick="toggleMenu()" class="sm:hidden text-2xl text-gray-700 hover:text-indigo-500">☰</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="sm:hidden hidden px-4 py-2 space-y-2 bg-white shadow">
+      <a href="#" class="block text-gray-700 hover:text-indigo-500">Home</a>
+      <a href="#products" class="block text-gray-700 hover:text-indigo-500">Products</a>
+      <a href="#contact" class="block text-gray-700 hover:text-indigo-500">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-gray-800 via-gray-600 to-gray-900 text-white text-center py-24 px-4">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">Welcome to SHOPORA</h1>
+    <p class="text-lg sm:text-xl md:text-2xl mb-6">Your premium destination for quality products at great prices</p>
+    <a href="#products" class="bg-white text-gray-800 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition">Shop Now</a>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-indigo-600 mb-12">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition p-4">
+        <img src="https://m.media-amazon.com/images/I/51KZcUQIyiS._AC_SL1080_.jpg" alt="Product 1" class="rounded mb-4 w-full object-cover h-48">
+        <h3 class="text-lg font-semibold">Stylish Sneakers</h3>
+        <p class="text-gray-600 text-sm">Comfort and style for everyday wear.</p>
+        <p class="text-indigo-600 mt-2 font-bold">$31.99</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition p-4">
+        <img src="https://m.media-amazon.com/images/I/61UxfXTUyvL._AC_SL1500_.jpg" alt="Product 2" class="rounded mb-4 w-full object-cover h-48">
+        <h3 class="text-lg font-semibold">Smart Watch</h3>
+        <p class="text-gray-600 text-sm">Track your health and stay connected.</p>
+        <p class="text-indigo-600 mt-2 font-bold">$89.99</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition p-4">
+        <img src="https://m.media-amazon.com/images/I/71Rl+qz66aL._AC_SL1500_.jpg" alt="Product 3" class="rounded mb-4 w-full object-cover h-48">
+        <h3 class="text-lg font-semibold">Bluetooth Speaker</h3>
+        <p class="text-gray-600 text-sm">Loud, portable, and long battery life.</p>
+        <p class="text-indigo-600 mt-2 font-bold">$29.99</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition p-4">
+        <img src="https://m.media-amazon.com/images/I/71P5V5lUUBL._AC_SL1500_.jpg" alt="Product 4" class="rounded mb-4 w-full object-cover h-48">
+        <h3 class="text-lg font-semibold">Modern Backpack</h3>
+        <p class="text-gray-600 text-sm">Perfect for school, work, and travel.</p>
+        <p class="text-indigo-600 mt-2 font-bold">$39.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Collection -->
+  <section class="max-w-7xl mx-auto px-4 py-16">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center text-indigo-600 mb-12">Special Collection</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="space-y-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6">
+          <img src="https://media.istockphoto.com/id/628540774/photo/luxury-watches.jpg?s=612x612" class="w-24 h-24 sm:w-32 sm:h-32 rounded object-cover" alt="Wristwatch">
+          <div>
+            <h3 class="text-xl font-bold">Elegant Wristwatch</h3>
+            <p class="text-gray-600">Timeless design with leather straps and a sleek dial.</p>
+            <p class="text-indigo-600 font-bold mt-2">$120.00</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6">
+          <img src="https://m.media-amazon.com/images/I/61NvzWcpZFL._AC_SL1500_.jpg" class="w-24 h-24 sm:w-32 sm:h-32 rounded object-cover" alt="Headphones">
+          <div>
+            <h3 class="text-xl font-bold">Premium Headphones</h3>
+            <p class="text-gray-600">Noise-cancelling over-ear headphones with deep bass.</p>
+            <p class="text-indigo-600 font-bold mt-2">$89.99</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6">
+          <img src="https://camerahouse.pk/cdn/shop/files/Zhiyun_Smooth_5_Combo_grande.jpg?v=1728072899" class="w-24 h-24 sm:w-32 sm:h-32 rounded object-cover" alt="Gimbal">
+          <div>
+            <h3 class="text-xl font-bold">Smartphone Gimbal</h3>
+            <p class="text-gray-600">Capture cinematic video with stabilized shots.</p>
+            <p class="text-indigo-600 font-bold mt-2">$75.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6">
+          <img src="https://m.media-amazon.com/images/I/61F9Hbnx-BL._AC_SL1500_.jpg" class="w-24 h-24 sm:w-32 sm:h-32 rounded object-cover" alt="Laptop Stand">
+          <div>
+            <h3 class="text-xl font-bold">Laptop Stand</h3>
+            <p class="text-gray-600">Ergonomic aluminum stand for better posture and airflow.</p>
+            <p class="text-indigo-600 font-bold mt-2">$39.99</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6">
+          <img src="https://m.media-amazon.com/images/I/71IcWYBBWdL._UF1000,1000_QL80_.jpg" class="w-24 h-24 sm:w-32 sm:h-32 rounded object-cover" alt="Eco Bottle">
+          <div>
+            <h3 class="text-xl font-bold">Eco Bottle</h3>
+            <p class="text-gray-600">Reusable stainless steel bottle with temperature control.</p>
+            <p class="text-indigo-600 font-bold mt-2">$24.50</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 flex items-center space-x-6">
+          <img src="https://m.media-amazon.com/images/I/61ZPXDlf-kL._AC_SL1500_.jpg" class="w-24 h-24 sm:w-32 sm:h-32 rounded object-cover" alt="Wallet">
+          <div>
+            <h3 class="text-xl font-bold">Minimalist Wallet</h3>
+            <p class="text-gray-600">Compact, RFID-blocking wallet for daily essentials.</p>
+            <p class="text-indigo-600 font-bold mt-2">$29.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gradient-to-r from-white to-blue-50 py-20 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-indigo-600 mb-8">Contact Us</h2>
+      <form class="space-y-6 bg-white p-6 rounded-xl shadow-md">
+        <div>
+          <label class="block text-sm font-medium">Name</label>
+          <input type="text" class="w-full mt-1 p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" class="w-full mt-1 p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Message</label>
+          <textarea rows="4" class="w-full mt-1 p-3 border border-gray-300 rounded focus:ring-2 focus:ring-indigo-500"></textarea>
+        </div>
+        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="text-xl font-bold mb-4">Measum</h4>
+        <p>Your trusted destination for quality, variety, and style. Shop smarter with Measum.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+        <ul>
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#products" class="hover:underline">Products</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Customer Service</h4>
+        <ul>
+          <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+          <li><a href="#" class="hover:underline">Returns</a></li>
+          <li><a href="#" class="hover:underline">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-indigo-400">Facebook</a>
+          <a href="#" class="hover:text-indigo-400">Instagram</a>
+          <a href="#" class="hover:text-indigo-400">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-4 border-t border-gray-700 text-sm">
+      &copy; 2025 Measum. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
